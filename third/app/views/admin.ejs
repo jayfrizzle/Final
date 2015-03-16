@@ -1,0 +1,37 @@
+<! DOCTYPE HTML>
+<html>
+<head>
+    <title><%=title%></title>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+    <link href = "http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet" >
+</head>
+
+<body background="http://wallpaperstock.net/image-pattern_wallpapers_4222_1920x1200.jpg">
+
+<div class = "container">
+    <h2>Admin Settings</h2>
+    <p>Set boundaries for the testing page using this form:</p>
+    <p> Information Type (check all that apply)</p>
+    <form role="form">
+        <div class="checkbox-inline"> 
+           <label><input type="checkbox" value="">Sequential information</label>
+        </div>
+        <div class="checkbox-inline">
+           <label><input type="checkbox" value="">Jokes</label>
+        </div>
+        <div class="checkbox-inline">
+            <label><input type="checkbox" value="">Facts</label>
+        </div>
+        <form method="post" action="upload" enctype="multipart/form-data">
+            <input name='uploads[]' type="file" multiple>
+    </form>
+    <form class="form-inline" role="form">
+        <div class="form-group">
+            <label for="avg">Time between posts (minutes):</label>
+            <input type="number" class="form-control" id="avg">
+        </div>
+        <div class="form-group">
+            <label for "var">with variance:</label>
+            <input type="number" class="form-control" id="var">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
