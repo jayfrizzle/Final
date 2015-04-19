@@ -1,0 +1,12 @@
+{
+  "name": "fyp",
+  "version": "1.0.0",
+  "description": "myfyp",
+  "main": "server.js",
+  "scripts": {
+    "test": "test",
+    "start": "node server.js"
+  },
+  "author": "Jack Fry",
+  "license": "ISC"
+}
