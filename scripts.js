@@ -16,8 +16,8 @@ var interval
 
       feed.prepend(
         post.clone().attr({
-          src: 'images/cat.jpg',
-          //src: 'images/' + current + '.jpg',
+          
+          src: 'images/' + current+1 + '.jpg',
           alt: 'Post #' + current + '!'
         })
       )

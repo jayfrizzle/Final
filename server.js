@@ -59,7 +59,7 @@ var question = function (variable) {
         choices: [
           'Update interval.',
           'Update variance.',
-          'Update count.',
+          'Update type.',
           'Kill the server.'
         ]
       }, function (answer) {
@@ -70,7 +70,7 @@ var question = function (variable) {
             case 'Update variance.':
               question('variance')
               break
-            case 'Update count.':
+            case 'Update type.':
               question('count')
               break
             case 'Kill the server':

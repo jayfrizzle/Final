@@ -1,3 +1,16 @@
+.jumbotron{
+  height:300px;
+  background-image:url"http://theme-background-videos.s3.amazonaws.com/blue.jpg";
+}
+
+.jumbotron h1{
+  margin-left: 50px;
+  padding: 10px;
+  border: 3px;
+  border-style: solid;
+  border-color: #cccccc;
+}
+
 .update {
   display: block;
   padding: 40px;
