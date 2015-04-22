@@ -1,7 +1,7 @@
     // Testing variables.
 var interval
   , variance
-  , count
+  , type
   , current  = 0
   
     // Monitoring variable.
@@ -17,15 +17,15 @@ var interval
       feed.prepend(
         post.clone().attr({
           
-          src: 'images/' + current+1 + '.jpg',
+          src: type + '/' + current+1 + '.jpg',
           alt: 'Post #' + current + '!'
         })
       )
       
       current++
      
-      if (current == count)
-        return;
+//      if (current == count)
+//        return;
 
       // Work out actual variance
       var delta = (Math.random() * 2 - 1) * variance
@@ -38,7 +38,7 @@ $(function () {
 })
 
 $.getJSON('http://127.0.0.1:3030', function (data) {
-  count    = data.count
+  type    = data.type
   interval = data.interval
   variance = data.variance
   
