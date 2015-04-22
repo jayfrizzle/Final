@@ -7,7 +7,7 @@ var fs          = require('fs')
   , config = {
       interval: 10000,
       variance: 5000,
-      count:    50
+      type:    "images"
     }
     
   , log = 1 // The current log ID.
@@ -49,6 +49,16 @@ var question = function (variable) {
         loop()
       })
     }
+    
+    questionType = function(variable) {
+      inquirer.prompt({
+        name: variable,
+        message: 'What type of data do you want to show?'
+      }, function(answer) {
+        config[variable] = answer[variable]
+        loop()
+      })
+    }
 
     // Main loop.
   , loop = function () {
@@ -71,7 +81,7 @@ var question = function (variable) {
               question('variance')
               break
             case 'Update type.':
-              question('count')
+              questionType('type')
               break
             case 'Kill the server':
             default:
