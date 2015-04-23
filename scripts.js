@@ -2,7 +2,7 @@
 var interval
   , variance
   , type
-  , current  = 0
+  , current  = 1
   
     // Monitoring variable.
   , stats = []
@@ -17,7 +17,7 @@ var interval
       feed.prepend(
         post.clone().attr({
           
-          src: type + '/' + current+1 + '.jpg',
+          src: type + '/' + current + '.jpg',
           alt: 'Post #' + current + '!'
         })
       )
