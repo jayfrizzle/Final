@@ -37,7 +37,7 @@ $(function () {
   post = $('<img>').addClass('update')
 })
 
-$.getJSON('http://127.0.0.1:3030', function (data) {
+$.getJSON('http://127.0.0.1:8008', function (data) {
   type    = data.type
   interval = data.interval
   variance = data.variance
@@ -55,7 +55,7 @@ onblur  = function () { stats.push([0, Date.now() / 1000 | 0]) }
 $(window).bind('beforeunload', function () {
   $.ajax({
     type: 'POST',
-    url: 'http://127.0.0.1:3030',
+    url: 'http://127.0.0.1:8008',
     data: { stats: JSON.stringify(stats) },
     async: false,
     traditional: true
