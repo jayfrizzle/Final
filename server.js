@@ -35,7 +35,7 @@ var fs          = require('fs')
           res.end(JSON.stringify({}))
           break
       }
-    }).listen(3031, "localhost")
+    }).listen(8008, "localhost")
 
 console.log('Server running at' + localhost)
 
