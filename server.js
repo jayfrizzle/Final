@@ -35,9 +35,9 @@ var fs          = require('fs')
           res.end(JSON.stringify({}))
           break
       }
-    }).listen(3031, '127.0.0.1')
+    }).listen(3031, "localhost")
 
-console.log('Server running at http://127.0.0.1:3030/')
+console.log('Server running at' + localhost)
 
     // Generate a question for the admin.
 var question = function (variable) {
