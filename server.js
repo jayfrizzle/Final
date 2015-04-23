@@ -35,7 +35,7 @@ var fs          = require('fs')
           res.end(JSON.stringify({}))
           break
       }
-    }).listen(3030, '127.0.0.1')
+    }).listen(3031, '127.0.0.1')
 
 console.log('Server running at http://127.0.0.1:3030/')
 
