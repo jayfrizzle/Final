@@ -5,8 +5,8 @@ var fs          = require('fs')
   
     // The config object sent to the user.
   , config = {
-      interval: 10000,
-      variance: 5000,
+      interval: 60,
+      variance: 15,
       type:    "images"
     }
     
@@ -27,17 +27,18 @@ var fs          = require('fs')
 
           req.on('end', function () {
             fs.writeFile(
-              'logs/' + (log++) + '.txt',
+              '/root/Final/logs/' + (log++) + '.txt',
               JSON.stringify(querystring.parse(body))
             )
+		console.log('Saving')
           })
 
           res.end(JSON.stringify({}))
           break
       }
-    }).listen(8008, "localhost")
+    }).listen(80, "178.62.34.188")
 
-console.log('Server running at' + localhost)
+console.log('Server running at localhost:80')
 
     // Generate a question for the admin.
 var question = function (variable) {
