@@ -5,9 +5,9 @@ var fs          = require('fs')
   
     // The config object sent to the user.
   , config = {
-      interval: 10000,
-      variance: 5000,
-      type:    "images"
+      interval: 60,
+      variance: 15,
+      type:    "story"
     }
     
   , log = 1 // The current log ID.
@@ -35,7 +35,7 @@ var fs          = require('fs')
           res.end(JSON.stringify({}))
           break
       }
-    }).listen(8008, "localhost")
+    }).listen(8008, 178.62.34.188)
 
 console.log('Server running at' + localhost)
 
