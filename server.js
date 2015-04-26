@@ -7,7 +7,7 @@ var fs          = require('fs')
   , config = {
       interval: 60,
       variance: 15,
-      type:    "images"
+      type:    "story"
     }
     
   , log = 1 // The current log ID.
