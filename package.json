@@ -8,5 +8,8 @@
     "start": "node server.js"
   },
   "author": "Jack Fry",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "inquirer": "^0.8.2"
+  }
 }
